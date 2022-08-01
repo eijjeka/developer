@@ -1,0 +1,38 @@
+.header {
+  background-color: #1d2430;
+}
+
+.inner__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container__logo {
+  display: flex;
+  align-items: center;
+}
+
+.link__logo {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+}
+
+.link {
+  text-decoration: none;
+  color: #878e9b;
+  padding: 20px 0;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  &:hover,
+  :focus {
+    color: #fff;
+  }
+}
+
+.line {
+  margin: 0 20px;
+  color: #fff;
+}

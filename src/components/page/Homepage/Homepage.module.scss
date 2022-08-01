@@ -1,0 +1,46 @@
+.home {
+  display: flex;
+  align-items: center;
+  // padding-top: 50px;
+  color: #fff;
+}
+
+.meta__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home_title {
+  margin-bottom: 30px;
+  &__pre {
+    margin-bottom: 20px;
+  }
+}
+
+.hero_list {
+  display: flex;
+  list-style: none;
+  &__item {
+    margin-right: 15px;
+  }
+}
+
+.hero_list__btn {
+  display: inline-block;
+  padding: 8px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #656b77;
+  background-color: #1d2430;
+
+  &:hover,
+  :focus {
+    background-color: #4895fa;
+    color: #fff;
+  }
+}
+
+.hero__img {
+  padding-top: 50px;
+}
