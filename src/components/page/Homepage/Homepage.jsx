@@ -14,8 +14,7 @@ const Homepage = () => {
             </h1>
             <p className={s.home_title__pre}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-              est molestias nulla ipsa mollitia voluptates, veniam et
-              laudantium.
+              est molestias nulla ipsa mollitia voluptates, veniam et laudantiu.
             </p>
           </div>
           <ul className={s.hero_list}>
