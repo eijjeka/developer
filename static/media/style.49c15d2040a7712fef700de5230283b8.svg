@@ -1,0 +1,19 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 475 450" width="475" height="450">
+	<title>vi-5-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M0 0L475 0L475 450L0 450L0 0Z" />
+		</clipPath>
+		<image  width="72" height="71" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABHCAMAAACTZfGgAAAAAXNSR0IB2cksfwAAAKJQTFRFAAAAJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMJ1PMKFXPKlzYK1zYNXf9NHX6MGnrKVjSKlrVMW7xLGHeMGrrLmXkK17bKVfSMnD0L2foM3L3LGDeLWPiLmXlL2fnM3P3WJXpSQAAADZ0Uk5TACBff28wj9//z0Bg4JBQv6DwgO+wwJ/QrxBwP08vDx//////////////////////////////KqcayQAAAqhJREFUeJztl11/mjAUxhMROBAgQEAJrZvVal27bq3dvv9X2wnTimhLCLnYxZ4LQH7y9zkvOURCBohOHNSUDnnmUq7nw0FBaI6ZBNAWM8U0ZqI4UVFRFgEYhUe5wqSneGgGuQGHCcQUZxZKE9AMMfNOdk1AFXK6T0mAxMBPdvFQDNFQTo0ct3uTDTdEMc919+YUK2hgaN5lVwYcrM7BEJ3J5hzOruReD3QoPBPc8bjqqPTYUdSZaoPi08+HaYlKWePMvcFDMaB2FMC/cjtRZZNiSK6w0rPWx9BrokkBCMmHJSttk1SmMUPoBfBQQjEApDxV8sgJpKpinSEoj2QGUt7ixLzo2OtyI/DVV8MAhFyoePy8BCYYusVph1DgeiiZgnBdNZMmxMN+YEDRZtm0a9McSSk0TSX4syWW6gvBSUl4SjCqkCSiOnZZyvUsOUL4mCxObhAYYr5xDeZSTDw4Oomkjh8hmAMyRxCWLecFkQGHovYX4n0hlv0zXFbAJXEgRNBXiKBEQ7yqoM4FlEcfbtnPCZo+8iBMQARZrJY+IjHXNH/PsIz7I+MQqJMPKsGQM8gkiaNi8HvNBbglapYVqjXnktSG72tcUItmJo54SR9BlYP9G4/kqDkCZjOxK4bTLB65j/mvk6bnm7FzVfoNNPsEM2SXx3o4OF/1QEUfSNdS2QvSbGv7oOXdScsxoNW6pfvN1g4IUQ+WQOvdKNBmhfr22JC2Y0BPf6+f1PXKAujOFui7ul6OBz3/wMufo5L9skMpzPrRUh+9vNpqyPVmfB+t9k1wbxaqBjsVnQ3Qq/rwYAHU7shRoF92HD03a+3eUvnHVa2l99YeB/q9B1PQ9u2k/QrAGPSh/j3QxR//66p7QZp/oWTUw9HeGdPPgxuyw6bhx9LcHBHyBzvtZYZNs44tAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Clip-Path: laptop_1" clip-path="url(#cp1)">
+		<g id="laptop_1">
+			<g id="banner-image">
+				<use id="bootstrap-4" href="#img1" x="209" y="42" />
+			</g>
+		</g>
+	</g>
+</svg>
