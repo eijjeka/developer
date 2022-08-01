@@ -1,8 +1,29 @@
 import Container from "../../Container";
-import programmer from "image/programmer.svg";
+import main from "image/main4.svg";
+import human from "image/human.svg";
+import style from "image/style.svg";
+import jquery from "image/jquery.svg";
+import php from "image/php.svg";
+import html from "image/html5.svg";
+import technology from "image/technology.svg";
 import s from "../../page/Homepage/Homepage.module.scss";
+import { useEffect, useRef } from "react";
+import Parallax from "parallax-js";
 
 const Homepage = () => {
+  const sceneEl = useRef(null);
+
+  useEffect(() => {
+    const parallaxInstance = new Parallax(sceneEl.current, {
+      relativeInput: true,
+      hoverOnly: true,
+    });
+
+    parallaxInstance.enable();
+
+    return () => parallaxInstance.disable();
+  }, []);
+
   return (
     <Container>
       <section className={s.home}>
@@ -26,8 +47,31 @@ const Homepage = () => {
             </li>
           </ul>
         </div>
+
         <div className={s.hero__img}>
-          <img src={programmer} alt="programmer" />
+          <ul ref={sceneEl}>
+            <li className="layer" data-depth="0.00">
+              <img src={main} />
+            </li>
+            <li className="layer" data-depth="0.08">
+              <img src={human} />
+            </li>
+            <li className="layer" data-depth="0.40">
+              <img src={technology} />
+            </li>
+            <li className="layer" data-depth="0.15">
+              <img src={html} />
+            </li>
+            <li className="layer" data-depth="0.10">
+              <img src={style} />
+            </li>
+            <li className="layer" data-depth="0.20">
+              <img src={jquery} />
+            </li>
+            <li className="layer" data-depth="0.25">
+              <img src={php} />
+            </li>
+          </ul>
         </div>
       </section>
     </Container>
