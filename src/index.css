@@ -1,12 +1,4 @@
-@import "normalize.css";
-
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "./normalize.css";
 
 body {
   margin: 0;

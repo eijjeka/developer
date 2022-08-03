@@ -12,11 +12,13 @@ import Parallax from "parallax-js";
 
 const Homepage = () => {
   const sceneEl = useRef(null);
+  const section = useRef(null);
 
   useEffect(() => {
     const parallaxInstance = new Parallax(sceneEl.current, {
       relativeInput: true,
       hoverOnly: true,
+      inputElement: section.current,
     });
 
     parallaxInstance.enable();
@@ -26,7 +28,7 @@ const Homepage = () => {
 
   return (
     <Container>
-      <section className={s.home}>
+      <section className={s.home} ref={section}>
         <div>
           <div className={s.meta__container}>
             <h1 className={s.home_title}>
@@ -51,25 +53,25 @@ const Homepage = () => {
         <div className={s.hero__img}>
           <ul ref={sceneEl}>
             <li className="layer" data-depth="0.00">
-              <img src={main} />
+              <img src={main} alt="main" />
             </li>
             <li className="layer" data-depth="0.08">
-              <img src={human} />
+              <img src={human} alt="human" />
             </li>
             <li className="layer" data-depth="0.40">
-              <img src={technology} />
+              <img src={technology} alt="technology" />
             </li>
             <li className="layer" data-depth="0.15">
-              <img src={html} />
+              <img src={html} alt="html" />
             </li>
             <li className="layer" data-depth="0.10">
-              <img src={style} />
+              <img src={style} alt="style" />
             </li>
             <li className="layer" data-depth="0.20">
-              <img src={jquery} />
+              <img src={jquery} alt="jquery" />
             </li>
             <li className="layer" data-depth="0.25">
-              <img src={php} />
+              <img src={php} alt="php" />
             </li>
           </ul>
         </div>
