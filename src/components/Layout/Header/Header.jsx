@@ -1,4 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import Container from "../../Container";
 import s from "./Header.module.scss";
 
@@ -11,18 +12,22 @@ const Header = () => {
             <Link className={s.link__logo} to="/">{`Developer </>`}</Link>
             <span className={s.line}>|</span>
             <nav>
-              <NavLink className={s.link} to="/">
+              <NavHashLink
+                activeClassName={s.selected}
+                to="/#home"
+                className={s.link}
+              >
                 Home
-              </NavLink>
-              <NavLink className={s.link} to="about">
+              </NavHashLink>
+              <NavHashLink to="/#about" className={s.link}>
                 About
-              </NavLink>
-              <NavLink className={s.link} to="project">
+              </NavHashLink>
+              <NavHashLink smooth to="/#projects" className={s.link}>
                 My project
-              </NavLink>
-              <NavLink className={s.link} to="skills">
+              </NavHashLink>
+              <NavHashLink smooth to="/#technologies" className={s.link}>
                 Skills
-              </NavLink>
+              </NavHashLink>
             </nav>
           </div>
           <Link className={s.link} to="/">{`Hire Me →`}</Link>

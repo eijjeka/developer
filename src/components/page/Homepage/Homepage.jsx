@@ -28,7 +28,7 @@ const Homepage = () => {
 
   return (
     <Container>
-      <section className={s.home} ref={section}>
+      <section id="home" className={s.home} ref={section}>
         <div>
           <div className={s.meta__container}>
             <h1 className={s.home_title}>

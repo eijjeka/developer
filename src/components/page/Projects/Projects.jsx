@@ -8,10 +8,10 @@ import image from "image/image.gif";
 
 const Projects = () => {
   return (
-    <section>
+    <section id="projects">
       <Container>
         <div className={s.title_meta}>
-          <CodeIcon className={s.project__icon} />
+          <CodeIcon className="icon" />
           <h2 className={s.projects__title}>App I've Built</h2>
           <p className={s.projects__text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
