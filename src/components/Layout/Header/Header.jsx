@@ -1,36 +1,35 @@
-import { NavLink, Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import Container from "../../Container";
+import { Logo } from "components/Logo";
+import { Navbar } from "components/Navbar";
 import s from "./Header.module.scss";
+import { BurgerMenu } from "components/BurgerMenu";
+import { MenuIcon } from "@heroicons/react/solid";
+import { useState } from "react";
 
 const Header = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  const openMenu = () => {
+    setToggleMenu(!toggleMenu);
+  };
+
   return (
     <header className={s.header}>
       <Container>
         <div className={s.inner__container}>
           <div className={s.container__logo}>
-            <Link className={s.link__logo} to="/">{`Developer </>`}</Link>
+            <Logo />
             <span className={s.line}>|</span>
-            <nav>
-              <NavHashLink
-                activeClassName={s.selected}
-                to="/#home"
-                className={s.link}
-              >
-                Home
-              </NavHashLink>
-              <NavHashLink to="/#about" className={s.link}>
-                About
-              </NavHashLink>
-              <NavHashLink smooth to="/#projects" className={s.link}>
-                My project
-              </NavHashLink>
-              <NavHashLink smooth to="/#technologies" className={s.link}>
-                Skills
-              </NavHashLink>
-            </nav>
+            <Navbar />
+            <BurgerMenu openMenu={openMenu} activeMenu={toggleMenu} />
           </div>
-          <Link className={s.link} to="/">{`Hire Me →`}</Link>
+          <NavHashLink className={s.response__link} to="/#response">
+            {`Hire Me →`}
+          </NavHashLink>
+          <button onClick={openMenu} className={s.burger__btn}>
+            <MenuIcon width={30} />
+          </button>
         </div>
       </Container>
     </header>

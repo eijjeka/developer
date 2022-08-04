@@ -1,0 +1,45 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  list-style: none;
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
+.item {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #1d2430;
+}
+
+.icon {
+  width: 30px;
+  color: #878e9b;
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-align: center;
+  color: #878e9b;
+}
+
+.meta__user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.avatar {
+  width: 50px;
+  margin-right: 20px;
+
+  &__meta {
+    color: #fff;
+  }
+}

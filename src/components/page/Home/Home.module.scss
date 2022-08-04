@@ -1,0 +1,41 @@
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 38px;
+  color: #fff;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.meta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+
+  @media screen and (min-width: 767px) {
+    align-items: start;
+    padding: 0;
+  }
+}
+
+.home_title {
+  margin-bottom: 30px;
+  text-align: center;
+
+  &__pre {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+
+    &__pre {
+      text-align: start;
+    }
+  }
+}

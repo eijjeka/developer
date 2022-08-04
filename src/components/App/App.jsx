@@ -1,23 +1,16 @@
-// import { Routes, Route } from "react-router-dom";
 import Layout from "../Layout/Layout";
-import Homepage from "../page/Homepage/Homepage";
+import { Home } from "components/page/Home";
 import Projects from "components/page/Projects";
 import { Technologies } from "components/page/Technologies";
+import Testimonials from "components/page/Testimonials";
 
-function App() {
+export const App = () => {
   return (
     <Layout>
-      <Homepage />
+      <Home />
       <Projects />
       <Technologies />
+      <Testimonials />
     </Layout>
-    // <Routes>
-    //   <Route path="/" element={<Layout />}>
-    //     <Route index element={<Homepage />} />
-    //     <Route path="project" element={<Projects />} />
-    //   </Route>
-    // </Routes>
   );
-}
-
-export default App;
+};

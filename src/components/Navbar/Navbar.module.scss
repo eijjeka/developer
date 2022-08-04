@@ -1,0 +1,22 @@
+.nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.nav__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #878e9b;
+  padding: 20px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:hover,
+  :focus {
+    color: #fff;
+  }
+}

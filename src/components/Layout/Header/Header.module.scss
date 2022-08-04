@@ -13,13 +13,17 @@
   align-items: center;
 }
 
-.link__logo {
-  text-decoration: none;
+.line {
+  margin: 0 20px;
   color: #fff;
-  font-weight: 900;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
-.link {
+.response__link {
+  display: inline-block;
   text-decoration: none;
   color: #878e9b;
   padding: 20px 0;
@@ -28,13 +32,30 @@
   &:not(:last-child) {
     margin-right: 20px;
   }
+
   &:hover,
   :focus {
     color: #fff;
   }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
-.line {
-  margin: 0 20px;
+.burger__btn {
+  padding: 5px 5px 4px 5px;
+  border: none;
+  background-color: transparent;
   color: #fff;
+  cursor: pointer;
+
+  &:hover,
+  :focus {
+    color: aqua;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
